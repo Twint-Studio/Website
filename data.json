@@ -28,5 +28,10 @@
         "title": "ntfy",
         "description": "A simple HTTP-based pub-sub notification service.",
         "link": "https://ntfy.twint.my.id/"
+    },
+    {
+        "title": "IT-Tools",
+        "description": "Collection of handy online tools for developers.",
+        "link": "https://ntfy.twint.my.id/"
     }
 ]

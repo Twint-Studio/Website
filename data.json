@@ -1,0 +1,32 @@
+[
+    {
+        "title": "OpenAPI",
+        "description": "An API for url shortening and codebin.",
+        "link": "https://api.twint.my.id/"
+    },
+    {
+        "title": "5D Diplomacy",
+        "description": "Diplomacy but 5D with multiverse time travel",
+        "link": "https://diplomacy.twint.my.id/"
+    },
+    {
+        "title": "Ganymede",
+        "description": "Twitch VOD and Live Stream archiving platform.",
+        "link": "https://ganymede.twint.my.id/"
+    },
+    {
+        "title": "Invidious",
+        "description": "An alternative front-end to YouTube.",
+        "link": "https://invidious.twint.my.id/"
+    },
+    {
+        "title": "Materialious",
+        "description": "A material design theme for Invidious.",
+        "link": "https://materialious.twint.my.id/"
+    },
+    {
+        "title": "ntfy",
+        "description": "A simple HTTP-based pub-sub notification service.",
+        "link": "https://ntfy.twint.my.id/"
+    }
+]

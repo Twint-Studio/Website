@@ -5,6 +5,11 @@
         "link": "https://api.twint.my.id/"
     },
     {
+        "title": "Docs",
+        "description": "Docs for various projects I work on.",
+        "link": "https://docs.twint.my.id/"
+    },
+    {
         "title": "5D Diplomacy",
         "description": "Diplomacy but 5D with multiverse time travel",
         "link": "https://diplomacy.twint.my.id/"
@@ -38,5 +43,15 @@
         "title": "Stirling PDF",
         "description": "A web application that allows you to perform various operations on PDF files.",
         "link": "https://stirling-pdf.twint.my.id/"
+    },
+    {
+        "title": "Scratch",
+        "description": "A modified version of Scratch with hidden blocks and more addons.",
+        "link": "https://scratch.twint.my.id/"
+    },
+    {
+        "title": "smail",
+        "description": "A temp-mail service that runs entirely on CloudFlare.",
+        "link": "https://mail.twint.my.id/"
     }
 ]

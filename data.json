@@ -40,8 +40,18 @@
         "link": "https://scratch.twint.my.id/"
     },
     {
+        "title": "Search",
+        "description": "Add Kagi's bangs to any search engine or 4get.",
+        "link": "https://search.twint.my.id/"
+    },
+    {
         "title": "smail",
         "description": "A temp-mail service that runs entirely on CloudFlare.",
         "link": "https://mail.twint.my.id/"
+    },
+    {
+        "title": "4get",
+        "description": "A proxy search engine that doesn't suck.",
+        "link": "https://4get.twint.my.id/"
     }
 ]

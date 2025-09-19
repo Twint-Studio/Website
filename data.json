@@ -1,5 +1,10 @@
 [
     {
+        "title": "Uptime",
+        "description": "The uptime of the host we use.",
+        "link": "https://uptime.twint.my.id/"
+    },
+    {
         "title": "OpenAPI",
         "description": "An API for url shortening and codebin.",
         "link": "https://api.twint.my.id/"

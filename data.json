@@ -2,7 +2,7 @@
     {
         "title": "Uptime",
         "description": "The uptime of the host we use.",
-        "link": "https://uptime.twint.my.id/"
+        "link": "https://uptime.twint.my.id/status/twint"
     },
     {
         "title": "OpenAPI",

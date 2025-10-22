@@ -52,6 +52,10 @@
     {
         "title": "4get",
         "description": "A proxy search engine that doesn't suck.",
-        "link": "https://4get.twint.my.id/"
+        "link": [
+            "https://4get.twint.my.id/",
+            "https://5get.twint.my.id/",
+            "https://6get.twint.my.id/"
+        ]
     }
 ]

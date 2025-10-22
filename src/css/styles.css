@@ -17,3 +17,13 @@ header nav h5 {
 article nav a button {
     margin: 0;
 }
+
+article nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+article nav a {
+    margin: 0;
+}

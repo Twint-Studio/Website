@@ -5,7 +5,7 @@ const dist = `${__dirname}/dist`;
 
 const output = `${dist}/index.html`;
 
-import services from "./data.json";
+import services from "./data.json" with { type: "json" };
 
 try {
     await rm(dist, { recursive: true, force: true });

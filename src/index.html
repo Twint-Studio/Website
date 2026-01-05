@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./css/beer.min.css" rel="stylesheet">
     <script type="module" src="./js/beer.min.js.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@1.1.2/dist/cdn/material-dynamic-colors.min.js"></script>
     <link rel="stylesheet" href="./css/styles.css">
-    <title>twint</title>
+    <title>Twint</title>
 </head>
 <body>
 
-    <header>
+    <header class="background">
         <nav>
-            <h5 class="max"><i>computer</i> twint</h5>
+            <h5 class="max"><i>computer</i> Twint</h5>
             <a class="circle transparent" href="https://github.com/Twint-Studio">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                     <title>github</title>
@@ -21,6 +22,7 @@
             </a>
         </nav>
     </header>
+
     <main class="responsive">
         <div class="title">
             <h1>Services</h1>
@@ -32,9 +34,28 @@
         </div>
     </main>
 
-    <footer>
-        This website is not affiliated with TWINT AG or the Swiss TWINT payment service
+    <footer class="background">
+        This website is not affiliated with ANY other TWINT(s) or any other service. This is a personal project.
     </footer>
+
+    <dialog id="disclaimer">
+        <h5>⚠️ Important Disclaimer</h5>
+
+        <p>This website and its services are <strong>NOT affiliated with, endorsed by, or associated with TWINT.ch, TWINT AG, or any other TWINT service or organization.</strong></p>
+        <p>This is an independent personal project providing alternative services.</p>
+
+        <button>I Understand</button>
+    </dialog>
+
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+            const modal = document.getElementById("disclaimer");
+
+            modal.showModal();
+
+            document.querySelector("dialog button").addEventListener("click", () => modal.close());
+        });
+    </script>
 
 </body>
 </html>

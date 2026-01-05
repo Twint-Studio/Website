@@ -1,3 +1,4 @@
+/* Add a repeating text background 45deg angle */
 body {
     margin: 0;
 }
@@ -6,6 +7,10 @@ header nav h5 {
 	align-content: center;
 	display: flex;
 	gap: 0.4rem;
+}
+
+header svg {
+    width: 3rem;
 }
 
 .title {

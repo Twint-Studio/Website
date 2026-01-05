@@ -14,9 +14,9 @@ header svg {
 }
 
 .title {
-    padding-bottom: 3rem;
-    padding-top: 3rem;
+    padding-bottom: 1rem;
     text-align: center;
+    padding-top: 3rem;
 }
 
 article nav a button {

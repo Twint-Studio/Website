@@ -27,3 +27,7 @@ article nav {
 article nav a {
     margin: 0;
 }
+
+footer {
+    text-align: center;
+}

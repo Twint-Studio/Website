@@ -49,10 +49,16 @@
     <script>
         window.addEventListener("DOMContentLoaded", () => {
             const modal = document.getElementById("disclaimer");
+            const key = "disclaimer";
 
-            modal.showModal();
+            if (!localStorage.getItem(key) && modal.showModal) modal.showModal();
 
-            document.querySelector("dialog button").addEventListener("click", () => modal.close());
+            document.querySelector("dialog button").addEventListener("click", () => {
+                localStorage.setItem(key, "1");
+                modal.close();
+            });
+
+            modal.addEventListener("cancel", () => localStorage.setItem(key, "1"));
         });
     </script>
 

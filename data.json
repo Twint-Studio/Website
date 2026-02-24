@@ -41,7 +41,7 @@
     },
     {
         "title": "Search",
-        "description": "A search engine which adds Kagi's bangs to 4get.",
+        "description": "A search engine which adds Kagi's bangs to 4get and does fallbacks.",
         "link": "https://search.twint.my.id/"
     },
     {
@@ -51,7 +51,7 @@
     },
     {
         "title": "4get",
-        "description": "A proxy search engine that doesn't suck.",
+        "description": "A proxy search engine that doesn't suck. (4bang fork)",
         "link": [
             "https://4get.twint.my.id/",
             "https://5get.twint.my.id/",

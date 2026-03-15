@@ -58,5 +58,10 @@
             "https://5get.twint.my.id/",
             "https://6get.twint.my.id/"
         ]
+    },
+    {
+        "title": "LMTTFY",
+        "description": "Let me Twint that for you!",
+        "link": "https://lmttfy.foo/"
     }
 ]

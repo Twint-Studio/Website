@@ -69,8 +69,8 @@
             disclaimer.addEventListener("cancel", () => localStorage.setItem("disclaimer", "1"));
 
             // Mirror
-            const visits = ~~localStorage.getItem("visitCount") + 1;
-            localStorage.setItem("visitCount", visits);
+            const visits = ~~localStorage.getItem("visits") + 1;
+            localStorage.setItem("visits", visits);
 
             const mirror = document.getElementById("mirror");
             if (visits >= 10 && !localStorage.getItem("mirror")) mirror.classList.add("active");

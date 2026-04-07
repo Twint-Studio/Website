@@ -57,3 +57,11 @@ footer {
     display: flex;
     align-items: center;
 }
+
+.mirror-link {
+    display: none;
+}
+
+body.mirrors .mirror-link {
+    display: inline-flex;
+}

@@ -12,14 +12,21 @@ try {
     await cp(src, dist, { recursive: true });
 
     const template = await Bun.file(`${src}/index.html`).text();
-    const html = services.map(({ title, description, link }) => {
+    const html = services.map(({ title, description, link, mirror }) => {
         const links = (Array.isArray(link) ? link : [link]).filter(Boolean);
-        const multiple = links.length > 1;
+        const mirrors = (Array.isArray(mirror) ? mirror : [mirror]).filter(Boolean);
 
         const buttons = links
             .map((url, i) => {
-                const label = multiple ? `Open Service ${i + 1}` : "Open Service";
+                const label = links.length > 1 ? `Open Service ${i + 1}` : "Open Service";
                 return /* html */ `<a href="${url}"><button>${label} <i>link</i></button></a>`;
+            })
+            .join("");
+
+        const mirrorButtons = mirrors
+            .map((url, i) => {
+                const label = mirrors.length > 1 ? `Mirror ${i + 1}` : "Mirror";
+                return /* html */ `<a class="mirror-link" href="${url}"><button class="border">${label} <i>swap_horiz</i></button></a>`;
             })
             .join("");
 
@@ -31,7 +38,7 @@ try {
                         <p>${description}</p>
                     </div>
                 </div>
-                ${buttons ? `<nav>${buttons}</nav>` : ""}
+                ${buttons || mirrorButtons ? `<nav>${buttons}${mirrorButtons}</nav>` : ""}
             </article>
         `;
     }).join("");

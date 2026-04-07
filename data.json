@@ -7,7 +7,8 @@
     {
         "title": "OpenAPI",
         "description": "An API for url shortening and codebin.",
-        "link": "https://api.twint.my.id/"
+        "link": "https://api.twint.my.id/",
+        "mirror": "https://api.twint.us.kg/"
     },
     {
         "title": "Docs",
@@ -17,7 +18,8 @@
     {
         "title": "5D Diplomacy",
         "description": "Diplomacy but 5D with multiverse time travel",
-        "link": "https://diplomacy.twint.my.id/"
+        "link": "https://diplomacy.twint.my.id/",
+        "mirror": "https://diplomacy.twint.us.kg/"
     },
     {
         "title": "IT-Tools",
@@ -27,7 +29,8 @@
     {
         "title": "ntfy",
         "description": "A simple HTTP-based pub-sub notification service.",
-        "link": "https://ntfy.twint.my.id/"
+        "link": "https://ntfy.twint.my.id/",
+        "mirror": "https://ntfy.twint.us.kg/"
     },
     {
         "title": "BentoPDF",
@@ -42,7 +45,8 @@
     {
         "title": "Search",
         "description": "A search engine which adds Kagi's bangs to 4get and does fallbacks.",
-        "link": "https://search.twint.my.id/"
+        "link": "https://search.twint.my.id/",
+        "mirror": "https://search.twint.us.kg/"
     },
     {
         "title": "smail",
@@ -57,6 +61,11 @@
             "https://4get.up.railway.app/",
             "https://5get.twint.my.id/",
             "https://6get.clovara.twint.my.id/"
+        ],
+        "mirror": [
+            "https://4get.twint.us.kg/",
+            "https://5get.twint.us.kg/",
+            "https://6get.clovara.twint.us.kg/"
         ]
     },
     {

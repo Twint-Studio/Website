@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./css/beer.min.css" rel="stylesheet">
     <script type="module" src="./js/beer.min.js.js"></script>
-    <script type="module" src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@1.1.2/dist/cdn/material-dynamic-colors.min.js"></script>
+    <script type="module" src="./js/material-dynamic-colors.min.js"></script>
     <link rel="stylesheet" href="./css/styles.css">
     <title>Twint</title>
 </head>
@@ -28,6 +28,14 @@
             <h1>Services</h1>
         </div>
 
+        <div id="mirror" class="primary-container round">
+            <div class="row middle-align padding">
+                <i>lightbulb</i>
+                <div class="max"><strong>Tip:</strong> We have a mirror for some services at <a href="https://twint.us.kg" target="_blank" rel="noopener">twint.us.kg</a>.</div>
+                <button class="transparent circle small" id="mirror-close" aria-label="Dismiss"><i>close</i></button>
+            </div>
+        </div>
+
         <div class="grid">
             {{ services }}
         </div>
@@ -48,17 +56,29 @@
 
     <script>
         window.addEventListener("DOMContentLoaded", () => {
-            const modal = document.getElementById("disclaimer");
-            const key = "disclaimer";
+            // Disclaimer
+            const disclaimer = document.getElementById("disclaimer");
 
-            if (!localStorage.getItem(key) && modal.showModal) modal.showModal();
+            if (!localStorage.getItem("disclaimer") && disclaimer.showModal) disclaimer.showModal();
 
-            document.querySelector("dialog button").addEventListener("click", () => {
-                localStorage.setItem(key, "1");
-                modal.close();
+            disclaimer.querySelector("dialog button").addEventListener("click", () => {
+                localStorage.setItem("disclaimer", "1");
+                disclaimer.close();
             });
 
-            modal.addEventListener("cancel", () => localStorage.setItem(key, "1"));
+            disclaimer.addEventListener("cancel", () => localStorage.setItem("disclaimer", "1"));
+
+            // Mirror
+            const visits = ~~localStorage.getItem("visitCount") + 1;
+            localStorage.setItem("visitCount", visits);
+
+            const mirror = document.getElementById("mirror");
+            if (visits >= 10 && !localStorage.getItem("mirror")) mirror.classList.add("active");
+
+            document.getElementById("mirror-close").addEventListener("click", () => {
+                localStorage.setItem("mirror", "1");
+                mirror.classList.remove("active");
+            });
         });
     </script>
 

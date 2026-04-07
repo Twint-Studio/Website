@@ -1,12 +1,11 @@
-/* Add a repeating text background 45deg angle */
 body {
     margin: 0;
 }
 
 header nav h5 {
-	align-content: center;
-	display: flex;
-	gap: 0.4rem;
+    align-content: center;
+    display: flex;
+    gap: 0.4rem;
 }
 
 header svg {
@@ -39,4 +38,22 @@ article nav a {
 
 footer {
     text-align: center;
+}
+
+#mirror {
+    display: none;
+    margin-bottom: 1rem;
+}
+
+#mirror.active {
+    display: block;
+}
+
+#mirror > div {
+    gap: 0.5rem;
+}
+
+#mirror i:first-child {
+    display: flex;
+    align-items: center;
 }

@@ -5,12 +5,6 @@
         "link": "https://uptime.twint.my.id/"
     },
     {
-        "title": "OpenAPI",
-        "description": "An API for url shortening and codebin.",
-        "link": "https://api.twint.my.id/",
-        "mirror": "https://api.twint.us.kg/"
-    },
-    {
         "title": "Docs",
         "description": "Docs for various projects I work on.",
         "link": "https://docs.twint.my.id/"

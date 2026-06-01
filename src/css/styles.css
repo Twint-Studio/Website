@@ -39,29 +39,3 @@ article nav a {
 footer {
     text-align: center;
 }
-
-#mirror {
-    display: none;
-    margin-bottom: 1rem;
-}
-
-#mirror.active {
-    display: block;
-}
-
-#mirror > div {
-    gap: 0.5rem;
-}
-
-#mirror i:first-child {
-    display: flex;
-    align-items: center;
-}
-
-.mirror-link {
-    display: none;
-}
-
-body.mirrors .mirror-link {
-    display: inline-flex;
-}

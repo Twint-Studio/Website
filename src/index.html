@@ -28,14 +28,6 @@
             <h1>Services</h1>
         </div>
 
-        <div id="mirror" class="primary-container round">
-            <div class="row middle-align padding">
-                <i>lightbulb</i>
-                <div class="max"><strong>Tip:</strong> We have a mirror for some services at <a href="https://twint.us.kg" target="_blank" rel="noopener">twint.us.kg</a>.</div>
-                <button class="transparent circle small" id="mirror-close" aria-label="Dismiss"><i>close</i></button>
-            </div>
-        </div>
-
         <div class="grid">
             {{ services }}
         </div>
@@ -67,21 +59,6 @@
             });
 
             disclaimer.addEventListener("cancel", () => localStorage.setItem("disclaimer", "1"));
-
-            // Mirror
-            const visits = ~~localStorage.getItem("visits") + 1;
-            localStorage.setItem("visits", visits);
-
-            if (visits >= 10) {
-                document.body.classList.add("mirrors");
-                const mirror = document.getElementById("mirror");
-                if (!localStorage.getItem("mirror")) mirror.classList.add("active");
-            }
-
-            document.getElementById("mirror-close").addEventListener("click", () => {
-                localStorage.setItem("mirror", "1");
-                document.getElementById("mirror").classList.remove("active");
-            });
         });
     </script>
 

@@ -2,47 +2,42 @@
     {
         "title": "Uptime",
         "description": "The uptime of the host we use.",
-        "link": "https://uptime.twint.my.id/"
+        "link": "https://uptime.twint.us.kg/"
     },
     {
         "title": "Docs",
         "description": "Docs for various projects I work on.",
-        "link": "https://docs.twint.my.id/"
+        "link": "https://docs.twint.us.kg/"
     },
     {
         "title": "5D Diplomacy",
         "description": "Diplomacy but 5D with multiverse time travel",
-        "link": "https://diplomacy.twint.my.id/",
-        "mirror": "https://diplomacy.twint.us.kg/"
+        "link": "https://diplomacy.twint.us.kg/"
     },
     {
         "title": "IT-Tools",
         "description": "Collection of handy online tools for developers.",
-        "link": "https://it-tools.twint.my.id/",
-        "mirror": "https://it-tools.twint.us.kg/"
+        "link": "https://it-tools.twint.us.kg/"
     },
     {
         "title": "ntfy",
         "description": "A simple HTTP-based pub-sub notification service.",
-        "link": "https://ntfy.twint.my.id/",
-        "mirror": "https://ntfy.twint.us.kg/"
+        "link": "https://ntfy.twint.us.kg/"
     },
     {
         "title": "BentoPDF",
         "description": "A web application that allows you to perform various operations on PDF files.",
-        "link": "https://bentopdf.twint.my.id/",
-        "mirror": "https://bentopdf.twint.us.kg/"
+        "link": "https://bentopdf.twint.us.kg/"
     },
     {
         "title": "Scratch",
         "description": "A modified version of Scratch with hidden blocks and more addons.",
-        "link": "https://scratch.twint.my.id/"
+        "link": "https://scratch.twint.us.kg/"
     },
     {
         "title": "Search",
         "description": "A search engine which adds Kagi's bangs to 4get and does fallbacks.",
-        "link": "https://search.twint.my.id/",
-        "mirror": "https://search.twint.us.kg/"
+        "link": "https://search.twint.us.kg/"
     },
     {
         "title": "smail",
@@ -53,13 +48,8 @@
         "title": "4get",
         "description": "A proxy search engine that doesn't suck. (4bang fork)",
         "link": [
-            "https://4get.twint.my.id/",
-            "https://4get.up.railway.app/",
-            "https://5get.twint.my.id/",
-            "https://6get.twint.my.id/"
-        ],
-        "mirror": [
             "https://4get.twint.us.kg/",
+            "https://4get.up.railway.app/",
             "https://5get.twint.us.kg/",
             "https://6get.twint.us.kg/"
         ]

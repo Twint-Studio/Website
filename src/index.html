@@ -7,13 +7,13 @@
     <script type="module" src="./js/beer.min.js.js"></script>
     <script type="module" src="./js/material-dynamic-colors.min.js"></script>
     <link rel="stylesheet" href="./css/styles.css">
-    <title>Twint</title>
+    <title>itnwT</title>
 </head>
 <body>
 
     <header class="background">
         <nav>
-            <h5 class="max"><i>computer</i> Twint</h5>
+            <h5 class="max"><i>computer</i> <span id="twint">itnwT</span></h5>
             <a class="circle transparent" href="https://github.com/Twint-Studio">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                     <title>github</title>
@@ -59,6 +59,15 @@
             });
 
             disclaimer.addEventListener("cancel", () => localStorage.setItem("disclaimer", "1"));
+
+            // Shuffle Twint
+            const twint = document.getElementById("twint");
+
+            const visits = ~~localStorage.getItem("visits") + 1;
+            localStorage.setItem("visits", visits);
+
+            const text = visits >= 100 ? "Twint" : [...twint.textContent].sort(() => Math.random() - 0.5).join("");
+            twint.textContent = document.title = text;
         });
     </script>
 

@@ -40,11 +40,6 @@
         "link": "https://search.twint.us.kg/"
     },
     {
-        "title": "smail",
-        "description": "A temp-mail service that runs entirely on CloudFlare.",
-        "link": "https://mail.twint.my.id/"
-    },
-    {
         "title": "4get",
         "description": "A proxy search engine that doesn't suck. (4bang fork)",
         "link": [

@@ -1,41 +1,114 @@
 body {
-    margin: 0;
-}
-
-header nav h5 {
-    align-content: center;
     display: flex;
-    gap: 0.4rem;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-header svg {
-    width: 3rem;
+.nav-header svg {
+    stroke: var(--text-color);
 }
 
-.title {
-    padding-bottom: 1rem;
-    text-align: center;
-    padding-top: 1rem;
+@media (max-width: 48rem) {
+    .nav {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .nav-header {
+        margin-bottom: 0;
+    }
+
+    .nav-item {
+        justify-content: flex-end;
+    }
+
+    .nav-item.right {
+        margin-top: 0;
+    }
 }
 
 main {
-    padding-bottom: 1rem;
+    flex: 1;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 75rem;
+    margin: auto;
+    padding: 1rem;
 }
 
-article nav a button {
+main h1 {
     margin: 0;
-}
-
-article nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-}
-
-article nav a {
-    margin: 0;
-}
-
-footer {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 3.5625rem;
     text-align: center;
+}
+
+.card-title,
+.dialog-content h5 {
+    margin-top: 0;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.cards .card {
+    margin: 0;
+    padding: 0.9375rem;
+    text-align: left;
+    width: auto;
+}
+
+.card-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+    text-align: center;
+}
+
+@media (max-width: 31.25rem) {
+    .card-buttons {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card-buttons .card-button {
+    width: auto;
+    padding-inline: 0;
+}
+
+.card-button svg {
+    margin-left: 0.25rem;
+    vertical-align: middle;
+}
+
+.footer {
+    padding: 1.5rem 1rem;
+    font-size: 0.875rem;
+    text-align: center;
+    color: var(--text-card-description);
+    background: var(--forground-color);
+}
+
+#disclaimer {
+    max-width: 45vw;
+}
+
+.dialog-content h5 {
+    font-size: 1.75rem;
+    margin-bottom: 0px;
+}
+
+.dialog-content p {
+    color: var(--text-card-description);
+}
+
+.dialog-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
 }

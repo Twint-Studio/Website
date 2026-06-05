@@ -3,47 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./css/beer.min.css" rel="stylesheet">
-    <script type="module" src="./js/beer.min.js.js"></script>
-    <script type="module" src="./js/material-dynamic-colors.min.js"></script>
+    <link rel="stylesheet" href="./css/lib.css">
     <link rel="stylesheet" href="./css/styles.css">
     <title>itnwT</title>
 </head>
 <body>
 
-    <header class="background">
-        <nav>
-            <h5 class="max"><i>computer</i> <span id="twint">itnwT</span></h5>
-            <a class="circle transparent" href="https://github.com/Twint-Studio">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <title>github</title>
-                    <path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z" />
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="link-icon" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <path d="M9 17H7A5 5 0 0 1 7 7h2"/>
+            <path d="M15 7h2a5 5 0 1 1 0 10h-2"/>
+            <line x1="8" x2="16" y1="12" y2="12"/>
+        </symbol>
+    </svg>
+
+    <nav class="nav">
+        <a class="nav-header" href="/">
+            <svg style="margin-right: 0.5rem;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-laptop-minimal-icon lucide-laptop-minimal">
+                <rect width="18" height="12" x="3" y="4" rx="2" ry="2"/>
+                <line x1="2" x2="22" y1="20" y2="20"/>
+            </svg>
+            <h1 id="twint">itnwT</h1>
+        </a>
+        <div class="nav-item right">
+            <a href="https://github.com/Twint-Studio">
+                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 512 512" width="2rem" height="2rem">
+                    <path d="M256 6.3C114.6 6.3 0 120.9 0 262.3c0 113.3 73.3 209 175 242.9 12.8 2.2 17.6-5.4 17.6-12.2 0-6.1-.3-26.2-.3-47.7-64.3 11.8-81-15.7-86.1-30.1-2.9-7.4-15.4-30.1-26.2-36.2-9-4.8-21.8-16.6-.3-17 20.2-.3 34.6 18.6 39.4 26.2 23 38.7 59.8 27.8 74.6 21.1 2.2-16.6 9-27.8 16.3-34.2-57-6.4-116.5-28.5-116.5-126.4 0-27.8 9.9-50.9 26.2-68.8-2.6-6.4-11.5-32.6 2.6-67.8 0 0 21.4-6.7 70.4 26.2 20.5-5.8 42.2-8.6 64-8.6s43.5 2.9 64 8.6c49-33.3 70.4-26.2 70.4-26.2 14.1 35.2 5.1 61.4 2.6 67.8 16.3 17.9 26.2 40.6 26.2 68.8 0 98.2-59.8 120-116.8 126.4 9.3 8 17.3 23.4 17.3 47.4 0 34.2-.3 61.8-.3 70.4 0 6.7 4.8 14.7 17.6 12.2C438.7 471.3 512 375.3 512 262.3c0-141.4-114.6-256-256-256" style="fill-rule:evenodd;clip-rule:evenodd;fill:#fff"/>
                 </svg>
             </a>
-        </nav>
-    </header>
-
-    <main class="responsive">
-        <div class="title">
-            <h1>Services</h1>
+            <a href="https://git.serversmp.xyz/TwintStudio">
+                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 512 512" width="2rem" height="2rem">
+                    <path d="M357.9 165c-23.1 0-43.2 12.7-53.9 31.5h-28.6c-34.1 0-65.6 11.3-91 30.4v-43.7c0-50.2 40.8-91 91-91H304c10.6 18.8 30.8 31.6 53.9 31.6 34.1 0 61.9-27.8 61.9-61.9S392 0 357.9 0c-23.1 0-43.2 12.7-53.9 31.5h-28.6c-83.7 0-151.7 68.1-151.7 151.7v213c-18.8 10.6-31.5 30.8-31.5 53.9 0 34.1 27.8 61.9 61.9 61.9s61.9-27.8 61.9-61.9c0-23.1-12.8-43.3-31.6-53.9v-48c0-50.2 40.8-91 91-91H304c10.6 18.8 30.8 31.6 53.9 31.6 34.1 0 61.9-27.8 61.9-61.9S392 165 357.9 165m0-128.6c14.1 0 25.5 11.4 25.5 25.5s-11.5 25.5-25.5 25.5c-14.1 0-25.5-11.4-25.5-25.5s11.5-25.5 25.5-25.5M154.1 475.6c-14.1 0-25.5-11.5-25.5-25.5 0-14.1 11.5-25.5 25.5-25.5s25.5 11.5 25.5 25.5c0 14.1-11.5 25.5-25.5 25.5m203.8-223.2c-14.1 0-25.5-11.4-25.5-25.5s11.5-25.5 25.5-25.5c14.1 0 25.5 11.4 25.5 25.5s-11.5 25.5-25.5 25.5" style="fill:#fff"/>
+                </svg>
+            </a>
         </div>
+    </nav>
 
-        <div class="grid">
+    <main>
+        <h1>Services</h1>
+
+        <div class="cards">
             {{ services }}
         </div>
     </main>
 
-    <footer class="background">
+    <footer class="footer">
         This website is not affiliated with ANY other TWINT(s) or any other service. This is a personal project.
     </footer>
 
-    <dialog id="disclaimer">
-        <h5>⚠️ Important Disclaimer</h5>
+    <dialog id="disclaimer" class="modal">
+        <div class="dialog-content">
+            <h5>⚠️ Important Disclaimer</h5>
 
-        <p>This website and its services are <strong>NOT affiliated with, endorsed by, or associated with TWINT.ch, TWINT AG, or any other TWINT service or organization.</strong></p>
-        <p>This is an independent personal project providing services, that I use.</p>
-
-        <button>I Understand</button>
+            <p>This website and its services are <strong>NOT affiliated with, endorsed by, or associated with TWINT.ch, TWINT AG, or any other TWINT service or organization.</strong></p>
+            <p>This is an independent personal project providing services, that I use.</p>
+        </div>
+        <div class="dialog-actions">
+            <button class="button button-primary">I Understand</button>
+        </div>
     </dialog>
 
     <script>
@@ -53,7 +70,7 @@
 
             if (!localStorage.getItem("disclaimer") && disclaimer.showModal) disclaimer.showModal();
 
-            disclaimer.querySelector("dialog button").addEventListener("click", () => {
+            disclaimer.querySelector("button").addEventListener("click", () => {
                 localStorage.setItem("disclaimer", "1");
                 disclaimer.close();
             });

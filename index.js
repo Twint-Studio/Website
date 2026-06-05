@@ -18,20 +18,16 @@ try {
         const buttons = links
             .map((url, i) => {
                 const label = links.length > 1 ? `Open Service ${i + 1}` : "Open Service";
-                return /* html */ `<a href="${url}"><button>${label} <i>link</i></button></a>`;
+                return /* html */ `<a class="button button-primary card-button" href="${url}">${label} <svg width="16" height="16"><use xlink:href="#link-icon"/></svg></a>`;
             })
             .join("");
 
         return /* html */ `
-            <article class="round s12 m6 l4">
-                <div class="row">
-                    <div class="max">
-                        <h5>${title}</h5>
-                        <p>${description}</p>
-                    </div>
-                </div>
-                ${buttons ? `<nav>${buttons}</nav>` : ""}
-            </article>
+            <div class="card card-rounded card-background card-shadow">
+                <h5 class="card-title">${title}</h5>
+                <p class="card-description">${description}</p>
+                ${buttons ? `<div class="card-buttons">${buttons}</div>` : ""}
+            </div>
         `;
     }).join("");
 

@@ -2,50 +2,50 @@
     {
         "title": "Uptime",
         "description": "The uptime of the host we use.",
-        "link": "https://uptime.twint.us.kg/"
+        "link": "https://uptime.twint.pp.ua/"
     },
     {
         "title": "Docs",
         "description": "Docs for various projects I work on.",
-        "link": "https://docs.twint.us.kg/"
+        "link": "https://docs.twint.pp.ua/"
     },
     {
         "title": "5D Diplomacy",
         "description": "Diplomacy but 5D with multiverse time travel",
-        "link": "https://diplomacy.twint.us.kg/"
+        "link": "https://diplomacy.twint.pp.ua/"
     },
     {
         "title": "IT-Tools",
         "description": "Collection of handy online tools for developers.",
-        "link": "https://it-tools.twint.us.kg/"
+        "link": "https://it-tools.twint.pp.ua/"
     },
     {
         "title": "ntfy",
         "description": "A simple HTTP-based pub-sub notification service.",
-        "link": "https://ntfy.twint.us.kg/"
+        "link": "https://ntfy.twint.pp.ua/"
     },
     {
         "title": "BentoPDF",
         "description": "A web application that allows you to perform various operations on PDF files.",
-        "link": "https://bentopdf.twint.us.kg/"
+        "link": "https://bentopdf.twint.pp.ua/"
     },
     {
         "title": "Scratch",
         "description": "A modified version of Scratch with hidden blocks and more addons.",
-        "link": "https://scratch.twint.us.kg/"
+        "link": "https://scratch.twint.pp.ua/"
     },
     {
         "title": "Search",
         "description": "A search engine which adds Kagi's bangs to 4get and does fallbacks.",
-        "link": "https://search.twint.us.kg/"
+        "link": "https://search.twint.pp.ua/"
     },
     {
         "title": "4get",
         "description": "A proxy search engine that doesn't suck. (4bang fork)",
         "link": [
-            "https://4get.twint.us.kg/",
+            "https://4get.twint.pp.ua/",
             "https://4get.up.railway.app/",
-            "https://5get.twint.us.kg/"
+            "https://5get.twint.pp.ua/"
         ]
     },
     {

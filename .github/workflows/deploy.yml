@@ -32,7 +32,7 @@ jobs:
       - run: bun index.js
 
       - name: Create Artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           name: website
           path: ./dist/
